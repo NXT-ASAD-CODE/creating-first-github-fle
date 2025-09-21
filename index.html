@@ -4,14 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>github www</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* nav bar section */
+        ul li{
+            list-style-type: none;
+            padding: 15px;
+            font-size: large;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+             padding: 15px;
+        }
+        .nav-sticky{
+            position: sticky;
+        }
+    </style>
 </head>
 <body>
-    <nav>
+    <nav class="nav-sticky">
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Services</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
         </ul>
     </nav>
 </body>
